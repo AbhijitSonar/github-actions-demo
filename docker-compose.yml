@@ -22,7 +22,7 @@ services:
 
   # Go Backend API
   backend:
-    image: abhijit04/skillpulse-backend:abhijit
+    image: ${DOCKERHUB_USERNAME}/skillpulse-backend:abhijit
     restart: unless-stopped
     environment:
       DB_HOST: db
